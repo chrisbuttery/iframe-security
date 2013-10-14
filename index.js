@@ -4,9 +4,11 @@
  * otherwise display it
  */
 module.exports = function(){
+  var el = document.getElementsByTagName('html')[0];
+  el.classList.add('is-hidden');
+
   if (window.self === window.top) {
-    var el = document.getElementsByTagName('html')[0];
-    el.classList.add('block');
+    el.classList.remove('is-hidden');
   } else {
     window.top.location = window.self.location;
   }
