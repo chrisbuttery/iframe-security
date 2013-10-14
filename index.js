@@ -1,15 +1,9 @@
 /**
  * iframe-security
- * if the site location isnt top, hide the html
- * otherwise display it
+ * if the window doesnt match top, make sure it does
  */
 module.exports = function(){
-  var el = document.getElementsByTagName('html')[0];
-  el.classList.add('is-hidden');
-
-  if (window.self === window.top) {
-    el.classList.remove('is-hidden');
-  } else {
+  if (window.self != window.top) {
     window.top.location = window.self.location;
   }
 };
