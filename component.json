@@ -1,0 +1,14 @@
+{
+  "name": "iframe-security",
+  "repo": "iman-components/iframe-security",
+  "description": "Render the site blank if it's being run in an iframe",
+  "version": "0.0.1",
+  "keywords": [],
+  "dependencies": {},
+  "development": {},
+  "license": "MIT",
+  "main": "index.js",
+  "scripts": [
+    "index.js"
+  ]
+}
